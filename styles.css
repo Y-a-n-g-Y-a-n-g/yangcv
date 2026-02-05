@@ -501,6 +501,14 @@ h2 {
   .pub-item {
     grid-template-columns: 1fr;
   }
+
+  #projects .section-item {
+    grid-template-columns: minmax(120px, 140px) 1fr;
+  }
+
+  #projects .item-period {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 900px) {

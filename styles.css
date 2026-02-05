@@ -307,7 +307,7 @@ h2 {
   position: relative;
   margin-top: 18px;
   display: grid;
-  gap: 24px;
+  gap: 0;
   padding: 4px 0 2px;
 }
 
@@ -359,6 +359,8 @@ h2 {
   box-shadow: var(--shadow);
   display: grid;
   gap: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .gallery-item.left .gallery-card {
@@ -397,6 +399,18 @@ h2 {
 .gallery-location {
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .gallery-item + .gallery-item {
+    margin-top: clamp(-120px, -8vw, -70px);
+  }
+}
+
+@media (max-width: 899px) {
+  .gallery-item + .gallery-item {
+    margin-top: 16px;
+  }
 }
 
 body.gallery-only .content > .section-wrapper {

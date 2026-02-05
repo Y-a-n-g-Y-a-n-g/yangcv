@@ -424,6 +424,11 @@ h2 {
   color: var(--muted);
 }
 
+.name-highlight {
+  color: #b0302a;
+  font-weight: inherit;
+}
+
 .contact {
   display: grid;
   gap: 14px;

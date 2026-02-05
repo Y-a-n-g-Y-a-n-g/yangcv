@@ -540,6 +540,14 @@ h2 {
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .page {
+    width: 90vw;
+    max-width: 1400px;
+    min-width: 1120px;
+  }
+}
+
 @media (min-width: 1400px) {
   .page {
     width: 80vw;

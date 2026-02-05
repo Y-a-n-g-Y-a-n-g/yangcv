@@ -381,9 +381,10 @@ h2 {
 
 .gallery-photo {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
+  max-height: 260px;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   border: 1px solid var(--border);
   background: var(--accent-soft);
 }
@@ -391,6 +392,11 @@ h2 {
 .gallery-note {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.gallery-location {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 body.gallery-only .content > .section-wrapper {

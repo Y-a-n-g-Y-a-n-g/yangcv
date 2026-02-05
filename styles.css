@@ -61,6 +61,7 @@ h2 {
 }
 
 .page {
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 48px 28px 84px;
@@ -504,6 +505,7 @@ h2 {
 
 @media (max-width: 600px) {
   .page {
+    max-width: 100%;
     padding: 32px 18px 64px;
   }
 
@@ -513,6 +515,36 @@ h2 {
 
   .section {
     padding: 20px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-interests ul {
+    gap: 6px 10px;
+  }
+
+  .item-title {
+    font-size: 0.98rem;
+  }
+
+  .item-subtitle,
+  .item-description {
+    font-size: 0.92rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page {
+    width: 80vw;
+    max-width: 1600px;
+    min-width: 1120px;
   }
 }
 

@@ -303,6 +303,35 @@ h2 {
   gap: 18px;
 }
 
+.section-group {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.section-divider {
+  height: 0;
+  border: 0;
+  border-top: 1px solid rgba(86, 71, 52, 0.16);
+  margin: 6px 0 2px;
+}
+
+.section-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-group::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(90, 74, 55, 0.25), transparent);
+}
+
 .timeline {
   position: relative;
   margin-top: 16px;
@@ -362,9 +391,34 @@ h2 {
   border-bottom: 1px dashed var(--border);
 }
 
+#projects .section-item {
+  grid-template-columns: minmax(140px, 180px) 1fr;
+}
+
+#projects .item-period {
+  white-space: nowrap;
+}
+
+#research .section-item {
+  grid-template-columns: minmax(140px, 200px) 1fr;
+}
+
 .section-item:last-child {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+#awards .section-item {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#awards .section-item + .section-item {
+  margin-top: 10px;
+}
+
+#awards .section-divider {
+  margin: 10px 0 6px;
 }
 
 .item-period {
@@ -515,9 +569,15 @@ h2 {
     grid-template-columns: minmax(120px, 140px) 1fr;
   }
 
+#projects .item-period {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
   #projects .item-period {
-    white-space: nowrap;
+    font-size: 0.86rem;
   }
+}
 }
 
 @media (max-width: 900px) {

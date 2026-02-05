@@ -452,6 +452,15 @@ h2 {
   font-size: 0.9rem;
 }
 
+.item-title,
+.item-subtitle,
+.item-description,
+.pub-content,
+.contact,
+.hero-tagline {
+  overflow-wrap: anywhere;
+}
+
 .footer {
   margin-top: 40px;
   display: flex;
@@ -541,6 +550,45 @@ h2 {
 
   .section {
     padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .layout {
+    gap: 24px;
+  }
+
+  .nav-list {
+    grid-auto-flow: row;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 4px 0;
+  }
+
+  .section-list {
+    gap: 14px;
+  }
+
+  .section-item {
+    gap: 10px;
+  }
+
+  .item-period {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-strong);
+  }
+
+  .pub-content {
+    display: block;
   }
 }
 

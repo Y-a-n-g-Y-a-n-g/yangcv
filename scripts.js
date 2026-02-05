@@ -8,3 +8,15 @@ if (avatar) {
     });
   }
 }
+
+const galleryWrapper = document.querySelector('.gallery-wrapper');
+const updateGalleryView = () => {
+  const showGallery = window.location.hash === '#gallery';
+  if (galleryWrapper) {
+    galleryWrapper.hidden = !showGallery;
+  }
+  document.body.classList.toggle('gallery-only', showGallery);
+};
+
+window.addEventListener('hashchange', updateGalleryView);
+updateGalleryView();

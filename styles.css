@@ -303,35 +303,6 @@ h2 {
   gap: 18px;
 }
 
-.gallery-toggle {
-  margin-top: 6px;
-}
-
-.gallery-toggle summary {
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  list-style: none;
-}
-
-.gallery-toggle summary::marker {
-  content: "";
-}
-
-.gallery-toggle summary::after {
-  content: "+";
-  margin-left: auto;
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.gallery-toggle[open] summary::after {
-  content: "–";
-}
-
 .gallery-timeline {
   position: relative;
   margin-top: 18px;
@@ -420,6 +391,14 @@ h2 {
 .gallery-note {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+body.gallery-only .content > .section-wrapper {
+  display: none;
+}
+
+body.gallery-only .content > .gallery-wrapper {
+  display: block;
 }
 
 .section-group {

@@ -1,11 +1,11 @@
 # Academic CV Site (Pure HTML)
 
-This is a bilingual (Chinese/English) academic CV website built with plain HTML, CSS, and a tiny JS helper.
+This is a bilingual (English/Chinese) academic CV website built with plain HTML, CSS, and a tiny JS helper.
 
 ## How to Use
 
-- Open `index.html` in your browser for Chinese.
-- Open `en/index.html` for English.
+- Open `index.html` in your browser for English (default).
+- Open `zh/index.html` for Chinese.
 
 No build tools or installations are required.
 
@@ -13,8 +13,8 @@ No build tools or installations are required.
 
 Edit the following files directly:
 
-- `index.html` — Chinese content
-- `en/index.html` — English content
+- `index.html` — English content (default)
+- `zh/index.html` — Chinese content
 - `styles.css` — styling
 
 ## Assets

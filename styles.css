@@ -413,13 +413,6 @@ h2 {
   }
 }
 
-body.gallery-only .content > .section-wrapper {
-  display: none;
-}
-
-body.gallery-only .content > .gallery-wrapper {
-  display: block;
-}
 
 .section-group {
   font-size: 0.85rem;
